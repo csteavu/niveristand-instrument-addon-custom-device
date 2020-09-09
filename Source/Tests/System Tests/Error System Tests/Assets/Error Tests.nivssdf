@@ -316,7 +316,7 @@
 								<String>TCP</String>
 							</Property>
 							<Property Name="user.CD.TCP.IP">
-								<String>localhost</String>
+								<String>192.168.0.129</String>
 							</Property>
 							<Property Name="user.CD.TCP.Port">
 								<U32>8888</U32>

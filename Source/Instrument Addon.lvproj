@@ -35,6 +35,9 @@
 			</Item>
 			<Item Name="Support Libraries" Type="Folder">
 				<Item Name="Protections.lvlibp" Type="LVLibp" URL="../Addon/Support Libraries/Protections.lvlibp">
+					<Item Name="Types" Type="Folder">
+						<Item Name="Protection.ctl" Type="VI" URL="../Addon/Support Libraries/Protections.lvlibp/Types/Protection.ctl"/>
+					</Item>
 					<Item Name="Checksum U8.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U8/Checksum U8.lvclass"/>
 					<Item Name="Checksum U16.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U16/Checksum U16.lvclass"/>
 					<Item Name="Checksum U32.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U32/Checksum U32.lvclass"/>
@@ -126,15 +129,23 @@
 			<Item Name="LLB Pre-Build CHM Build.vi" Type="VI" URL="../Utilities/LLB Pre-Build CHM Build.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI.dll" Type="Document" URL="/&lt;instrlib&gt;/niSync/NationalInstruments.VeriStand.SystemDefinitionAPI.dll"/>
-			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
+				<Item Name="Append Path to Root if Relative - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Array__ogtk.vi"/>
+				<Item Name="Append Path to Root if Relative - Root Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Root Path Array__ogtk.vi"/>
 				<Item Name="Append Path to Root if Relative - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Scalar__ogtk.vi"/>
 				<Item Name="Append Path to Root if Relative__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative__ogtk.vi"/>
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+				<Item Name="Build Path - File Names and Paths Arrays - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names and Paths Arrays - path__ogtk.vi"/>
+				<Item Name="Build Path - File Names and Paths Arrays__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names and Paths Arrays__ogtk.vi"/>
+				<Item Name="Build Path - File Names Array - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names Array - path__ogtk.vi"/>
+				<Item Name="Build Path - File Names Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names Array__ogtk.vi"/>
+				<Item Name="Build Path - Traditional - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional - path__ogtk.vi"/>
+				<Item Name="Build Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional__ogtk.vi"/>
+				<Item Name="Build Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path__ogtk.vi"/>
+				<Item Name="Create Dir if Non-Existant__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Create Dir if Non-Existant__ogtk.vi"/>
 				<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
+				<Item Name="File Exists - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Array__ogtk.vi"/>
 				<Item Name="File Exists - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Scalar__ogtk.vi"/>
 				<Item Name="File Exists__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists__ogtk.vi"/>
 				<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
@@ -161,10 +172,15 @@
 				<Item Name="Remove Duplicates from 1D Array (U64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array (U64)__ogtk.vi"/>
 				<Item Name="Remove Duplicates from 1D Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array (Variant)__ogtk.vi"/>
 				<Item Name="Remove Duplicates from 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array__ogtk.vi"/>
+				<Item Name="Strip Path - Arrays__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path - Arrays__ogtk.vi"/>
+				<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
+				<Item Name="Strip Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path__ogtk.vi"/>
+				<Item Name="Temporary Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Temporary Directory__ogtk.vi"/>
 				<Item Name="Temporary Filename__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Temporary Filename__ogtk.vi"/>
 				<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
 				<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
 				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
+				<Item Name="Valid Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Valid Path - Traditional__ogtk.vi"/>
 				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
@@ -367,7 +383,6 @@
 				<Item Name="Load CHM Page.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Compiled HTML Menu Tool/Load CHM Page.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVComboBoxStrsAndValuesArrayTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVComboBoxStrsAndValuesArrayTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="MergeError.vi" Type="VI" URL="/&lt;vilib&gt;/NI Veristand/Execution/Shared/MergeError.vi"/>
@@ -566,6 +581,11 @@
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -592,6 +612,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
@@ -861,7 +884,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7F7FDA91-FFE5-4844-A4FA-9D8996F5C375}</Property>
-				<Property Name="Bld_version.build" Type="Int">52</Property>
+				<Property Name="Bld_version.build" Type="Int">76</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Instrument Host Automation API.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/NI_AB_PROJECTNAME/Windows/Host Automation API/Instrument Host Automation API.lvlibp</Property>
@@ -909,7 +932,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{70757631-4EA5-4C22-A187-59BB2EDF6D85}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Custom Devices/NI_AB_PROJECTNAME/Scripting API</Property>
@@ -1188,6 +1211,9 @@
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Instrument Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/Instrument Addon Engine.lvlib"/>
 		<Item Name="Protections.lvlibp" Type="LVLibp" URL="../Addon/Support Libraries/Protections.lvlibp">
+			<Item Name="Types" Type="Folder">
+				<Item Name="Protection.ctl" Type="VI" URL="../Addon/Support Libraries/Protections.lvlibp/Types/Protection.ctl"/>
+			</Item>
 			<Item Name="Checksum U8.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U8/Checksum U8.lvclass"/>
 			<Item Name="Checksum U16.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U16/Checksum U16.lvclass"/>
 			<Item Name="Checksum U32.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U32/Checksum U32.lvclass"/>
@@ -1229,9 +1255,6 @@
 			<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="../Addon/Support Libraries/Protocols.lvlibp/1abvi3w/vi.lib/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI.dll" Type="Document" URL="/&lt;instrlib&gt;/niSync/NationalInstruments.VeriStand.SystemDefinitionAPI.dll"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>
@@ -1290,7 +1313,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{FB085711-B7CD-49CE-AB6A-241C33E6676C}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap/Instrument Addon Engine Pharlap.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">37</Property>
+				<Property Name="Bld_version.build" Type="Int">38</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Pharlap/Instrument Addon Engine Pharlap.llb</Property>
@@ -1458,6 +1481,9 @@
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Instrument Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/Instrument Addon Engine.lvlib"/>
 		<Item Name="Protections.lvlibp" Type="LVLibp" URL="../Addon/Support Libraries/Protections.lvlibp">
+			<Item Name="Types" Type="Folder">
+				<Item Name="Protection.ctl" Type="VI" URL="../Addon/Support Libraries/Protections.lvlibp/Types/Protection.ctl"/>
+			</Item>
 			<Item Name="Checksum U8.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U8/Checksum U8.lvclass"/>
 			<Item Name="Checksum U16.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U16/Checksum U16.lvclass"/>
 			<Item Name="Checksum U32.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U32/Checksum U32.lvclass"/>
@@ -1499,9 +1525,6 @@
 			<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="../Addon/Support Libraries/Protocols.lvlibp/1abvi3w/vi.lib/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI.dll" Type="Document" URL="/&lt;instrlib&gt;/niSync/NationalInstruments.VeriStand.SystemDefinitionAPI.dll"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>
@@ -1654,6 +1677,9 @@
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Instrument Addon Engine.lvlib" Type="Library" URL="../Addon/Addon Engine/Instrument Addon Engine.lvlib"/>
 		<Item Name="Protections.lvlibp" Type="LVLibp" URL="../Addon/Support Libraries/Protections.lvlibp">
+			<Item Name="Types" Type="Folder">
+				<Item Name="Protection.ctl" Type="VI" URL="../Addon/Support Libraries/Protections.lvlibp/Types/Protection.ctl"/>
+			</Item>
 			<Item Name="Checksum U8.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U8/Checksum U8.lvclass"/>
 			<Item Name="Checksum U16.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U16/Checksum U16.lvclass"/>
 			<Item Name="Checksum U32.lvclass" Type="LVClass" URL="../Addon/Support Libraries/Protections.lvlibp/Checksum U32/Checksum U32.lvclass"/>
@@ -1695,9 +1721,6 @@
 			<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="../Addon/Support Libraries/Protocols.lvlibp/1abvi3w/vi.lib/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI.dll" Type="Document" URL="/&lt;instrlib&gt;/niSync/NationalInstruments.VeriStand.SystemDefinitionAPI.dll"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>

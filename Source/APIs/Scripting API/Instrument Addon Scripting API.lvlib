@@ -61,6 +61,8 @@
 	</Item>
 	<Item Name="Palettes" Type="Folder"/>
 	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Get Command Parameters.vi" Type="VI" URL="../SubVIs/Get Command Parameters.vi"/>
+		<Item Name="Set Command Parameters.vi" Type="VI" URL="../SubVIs/Set Command Parameters.vi"/>
 		<Item Name="Validate IA Refnum.vi" Type="VI" URL="../SubVIs/Validate IA Refnum.vi"/>
 		<Item Name="Create Error Codes.vi" Type="VI" URL="../SubVIs/Create Error Codes.vi"/>
 		<Item Name="Create Message Channels Section.vi" Type="VI" URL="../SubVIs/Create Message Channels Section.vi"/>
@@ -80,9 +82,13 @@
 		<Item Name="Set Message Trigger.vi" Type="VI" URL="../SubVIs/Set Message Trigger.vi"/>
 		<Item Name="Add Message Channel.vi" Type="VI" URL="../SubVIs/Add Message Channel.vi"/>
 		<Item Name="Create Enable Periodic.vi" Type="VI" URL="../SubVIs/Create Enable Periodic.vi"/>
+		<Item Name="Reference GUID Dictionary.vi" Type="VI" URL="../SubVIs/Reference GUID Dictionary.vi"/>
 	</Item>
 	<Item Name="TypeDefs" Type="Folder">
+		<Item Name="Linked Channel.ctl" Type="VI" URL="../TypeDefs/Linked Channel.ctl"/>
 		<Item Name="Message Settings.ctl" Type="VI" URL="../TypeDefs/Message Settings.ctl"/>
+		<Item Name="Command Settings.ctl" Type="VI" URL="../TypeDefs/Command Settings.ctl"/>
+		<Item Name="Padding.ctl" Type="VI" URL="../TypeDefs/Padding.ctl"/>
 		<Item Name="Protection Types.ctl" Type="VI" URL="../TypeDefs/Protection Types.ctl"/>
 	</Item>
 </Library>
